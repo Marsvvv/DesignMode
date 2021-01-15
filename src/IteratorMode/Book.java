@@ -1,5 +1,10 @@
 package IteratorMode;
 
+/**
+ * 普通的实体类，与书架是多对一的关系
+ *
+ * @author asus
+ */
 public class Book {
 
     private String name;

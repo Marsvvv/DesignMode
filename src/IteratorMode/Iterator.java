@@ -1,5 +1,11 @@
 package IteratorMode;
 
+/**
+ * Iterator模式用于数据集合中按照顺序遍历集合
+ * 这个类是用来定义
+ *
+ * @author asus
+ */
 public interface Iterator {
 
     /**

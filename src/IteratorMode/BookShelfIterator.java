@@ -1,5 +1,10 @@
 package IteratorMode;
 
+/**
+ * 书架迭代器的实现
+ *
+ * @author asus
+ */
 public class BookShelfIterator implements Iterator {
 
     private BookShelf bookShelf;
@@ -13,11 +18,7 @@ public class BookShelfIterator implements Iterator {
 
     @Override
     public Boolean hasNext() {
-        if (index < bookShelf.getLength()) {
-            return true;
-        } else {
-            return false;
-        }
+        return index < bookShelf.getLength();
     }
 
     @Override

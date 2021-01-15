@@ -1,5 +1,10 @@
 package IteratorMode;
 
+/**
+ * 定义一个返回迭代器的接口
+ *
+ * @author asus
+ */
 public interface Aggregate {
 
     /**
