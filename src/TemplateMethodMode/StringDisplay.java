@@ -1,4 +1,4 @@
-package TemplateMode;
+package TemplateMethodMode;
 
 public class StringDisplay extends Display {
 

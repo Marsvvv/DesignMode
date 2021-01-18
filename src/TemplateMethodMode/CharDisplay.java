@@ -1,4 +1,4 @@
-package TemplateMode;
+package TemplateMethodMode;
 
 public class CharDisplay extends Display {
 

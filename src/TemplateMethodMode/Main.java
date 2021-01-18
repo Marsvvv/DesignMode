@@ -1,4 +1,4 @@
-package TemplateMode;
+package TemplateMethodMode;
 
 /**
  * 模板模式：将具体实现交给子类
