@@ -1,15 +1,25 @@
 package AbstractFactory.factory;
 
+/**
+ * 抽象工厂模式：只关注接口，不关注零件的具体实现
+ * <p>
+ * 例子其实就是 一个Page页下有多个Tray，一个Tray下有多个Link，一个Link下有多Item
+ * 使用这些抽象类组成一个页面，直接使用抽象类的方式组装实例，不去关心实例是如何实现的
+ * <p>
+ * 实现类是用继承的方式，实现父类的抽象方法，达到实现创建实例
+ *
+ * @author asus
+ */
 public class Main {
 
     public static void main(String[] args) {
-        if (args.length != 1) {
+        /*if (args.length != 1) {
             System.out.println("Usage: java Main class.name.of.ConcreteFactory");
             System.out.println("Example 1: java Main listfactory.listFactory");
             System.out.println("Example 2: java Main tablefactory.TableFactory");
             System.exit(0);
-        }
-        Factory factory = Factory.getFactory(args[0]);
+        }*/
+        Factory factory = Factory.getFactory("AbstractFactory.listfactory.LifeFactory");
 
         Link people = factory.createLink("人民日报", "http://www.people.com.cn/");
         Link gmw = factory.createLink("光明日报", "http://www.gmw.cn/");
