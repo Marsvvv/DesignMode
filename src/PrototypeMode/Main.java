@@ -1,5 +1,8 @@
 package PrototypeMode;
 
+/**
+ * ProtoType模式：通过复制生成实例
+ */
 public class Main {
 
     public static void main(String[] args) {
@@ -17,5 +20,8 @@ public class Main {
         p2.use("Hello World.");
         Product p3 = manager.create("slash box");
         p3.use("Hello World.");
+
+        Product p4 = p2.createClone();
+        p4.use("aaa");
     }
 }

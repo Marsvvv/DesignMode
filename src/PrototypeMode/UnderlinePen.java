@@ -2,6 +2,11 @@ package PrototypeMode;
 
 import java.nio.charset.StandardCharsets;
 
+/**
+ * ConcretePrototype具体的原型：负责实现Prototype原型定义的方法
+ *
+ * @author asus
+ */
 public class UnderlinePen implements Product {
 
     private char ulChar;
